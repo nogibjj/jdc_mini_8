@@ -22,3 +22,9 @@
 - Time taken: 0.000746 microseconds
 - Memory used: 0 KB
 
+
+## Average Result
+- Result: 935.90908
+- Time taken: 0.0007813 microseconds
+- Memory used: 0 KB
+
