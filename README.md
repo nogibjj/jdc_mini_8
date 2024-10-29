@@ -48,3 +48,6 @@ Those for Python are preceded by `python`, e.g. `make python_install`.
 |    Elapsed Time    | 0.0008351 seconds | 0.00000 seconds |         Python is less         |
 |    Memory Usage    |    0 kilobytes    |   78671872.00000 kilobytes  |     Python is much larger              |
 
+![alt text](images/image.png)
+
+![alt text](images/image2.png)
