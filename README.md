@@ -2,7 +2,7 @@
 
 This project takes an existing Python script for data processing and rewrites it in Rust. It compares the speed and resource usage of the two. The ![dataset](https://github.com/fivethirtyeight/data/tree/master/nfl-wide-receivers) is imported as a csv and it contains 1932-2013 career stats for NFL receivers.
 
-[![cicd](https://github.com/nogibjj/jdc154_mini_5/actions/workflows/hello.yml/badge.svg)](https://github.com/nogibjj/jdc154_mini_5/actions/workflows/hello.yml)
+[![Rust CI/CD Pipeline](https://github.com/nogibjj/jdc_mini_8/actions/workflows/rust.yml/badge.svg)](https://github.com/nogibjj/jdc_mini_8/actions/workflows/rust.yml)
 
 ## Rust Files:
 * src - contains main.rs and lib.rs Rust scripts
