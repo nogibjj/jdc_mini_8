@@ -49,7 +49,6 @@ fn calculate_time_memory(path: &str) -> (i64, f64) {
 fn main() {
     let path = "./nfl-wide-receivers.csv"; // Updated with the actual CSV file path
 
-
     let avg: f64 = match calculate_avg_try(path) {
         Ok(value) => value,
         Err(err) => {
