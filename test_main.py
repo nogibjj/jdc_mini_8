@@ -1,31 +1,21 @@
-from mylib.extract import extract
-from mylib.transform_load import load
-from mylib.query import read, create, update, delete
-import os
+from mylib.average import average, calculate_time_memory
+
+data_path = "./nfl-wide-receivers.csv"
 
 
-def test_extract():
-    result = extract()
-    assert os.path.exists(result)
+def test_average():
+    result = average("./nfl-wide-receivers.csv")
+    expected_result = 935.9090788204381
+
+    assert result == expected_result, "Test has failed."
 
 
-def test_load():
-    database = load()
-    assert database == "nflReceivers.db"
+def test_calculate_time_memory():
+    result = calculate_time_memory("./nfl-wide-receivers.csv")
 
-
-def test_query():
-    created = create()
-    readed = read()
-    updated = update()
-    deleted = delete()
-    assert created == "Successful insertion into table"
-    assert readed == "Success"
-    assert updated == "Successfully updated"
-    assert deleted == "Successfully deleted"
+    assert result is not None, "Test has failed."
 
 
 if __name__ == "__main__":
-    test_load()
-    test_extract()
-    test_query()
+    test_average()
+    test_calculate_time_memory()

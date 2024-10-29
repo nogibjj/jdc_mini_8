@@ -1,31 +1,35 @@
-name: cicd
-
+ame: Python-Rust
 on:
-  push: 
-    branches: [ "main" ]  
+  push:
+    branches: [ "main" ]
   pull_request:
-    branches: [ "main" ] 
+    branches: [ "main" ]
   workflow_dispatch:
 
-
 jobs:
-  init_build: 
-    runs-on: ubuntu-latest 
-    steps: 
-       
-      - uses: actions/checkout@v2 
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v1
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
         with:
-          python-version: 3.8
+          python-version: '3.11.5'
+
       - name: Install dependencies
         run: make install
 
-      - name: Lint 
+      - name: Make lint
         run: make lint
-
-      - name: Format
+        
+      - name: format
         run: make format
 
-      - name: Test
+      - name: Run Main File
+        run: python main.py
+
+      - name: Run tests
         run: make test
