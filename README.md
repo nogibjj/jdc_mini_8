@@ -4,6 +4,8 @@ This project takes an existing Python script for data processing and rewrites it
 
 [![Rust CI/CD Pipeline](https://github.com/nogibjj/jdc_mini_8/actions/workflows/rust.yml/badge.svg)](https://github.com/nogibjj/jdc_mini_8/actions/workflows/rust.yml)
 
+[![Python CI/CD Pipeline](https://github.com/nogibjj/jdc_mini_8/actions/workflows/hello.yml/badge.svg)](https://github.com/nogibjj/jdc_mini_8/actions/workflows/hello.yml)
+
 ## Rust Files:
 * src - contains main.rs and lib.rs Rust scripts
 * lib.rs contains a function to get the average of the career_try column in the dataset
